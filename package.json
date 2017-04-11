@@ -1,0 +1,35 @@
+{
+  "name": "xchat_public_platform",
+  "version": "1.0.0",
+  "description": "Bring Wechat public Account to all messaging messaging platform  \r ##Feature\r * Push Notification\r * Feature Navigator",
+  "main": "index.js",
+  "keywords": [
+    "fb",
+    "Teltgram",
+    "Line",
+    "Wechat",
+    "Public Account",
+    "微信",
+    "公衆號",
+    "facebook",
+    "messenger",
+    "messanger",
+    "bot",
+    "bots",
+    "framework"
+  ],
+  "author": "Lammmmmmm",
+  "type" : "git",
+  "url" : "https://github.com/lammmmmmm/XCPP-Bot-Builder",
+  "license": "MIT",
+  "dependencies": {
+    "lokijs": "^1.4.3",
+    "request": "^2.80.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "express": "^4.15.2",
+    "nock": "^9.0.9",
+    "sinon": "^1.17.7"
+  }
+}
