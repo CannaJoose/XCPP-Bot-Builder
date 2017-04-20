@@ -21,8 +21,12 @@
   "author": "Lammmmmmm",
   "type" : "git",
   "url" : "https://github.com/lammmmmmm/XCPP-Bot-Builder",
-  "homepage": "https://github.com/lammmmmmm/XCPP-Bot-Builder#readme"
+  "homepage": "https://github.com/lammmmmmm/XCPP-Bot-Builder#readme",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lammmmmmm/XCPP-Bot-Builder.git"
+  },
   "dependencies": {
     "lokijs": "^1.4.3",
     "request": "^2.80.0"
