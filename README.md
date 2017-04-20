@@ -57,7 +57,7 @@ Create platform just like WeChat Public Platform or Chatbots for Facebook Messen
 
 #Installation
 ``
-npm install xcpp --save
+npm install xchat_public_platform --save
 ``
 
 #Sample code

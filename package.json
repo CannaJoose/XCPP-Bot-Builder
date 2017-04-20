@@ -1,6 +1,6 @@
 {
   "name": "xchat_public_platform",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Bring Wechat public Account to all messaging messaging platform  \r ##Feature\r * Push Notification\r * Feature Navigator",
   "main": "index.js",
   "keywords": [
@@ -21,6 +21,7 @@
   "author": "Lammmmmmm",
   "type" : "git",
   "url" : "https://github.com/lammmmmmm/XCPP-Bot-Builder",
+  "homepage": "https://github.com/lammmmmmm/XCPP-Bot-Builder#readme"
   "license": "MIT",
   "dependencies": {
     "lokijs": "^1.4.3",
