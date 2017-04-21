@@ -1,6 +1,6 @@
 {
   "name": "xchat_public_platform",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Bring Wechat public Account to all messaging messaging platform  \r ##Feature\r * Push Notification\r * Feature Navigator",
   "main": "index.js",
   "keywords": [

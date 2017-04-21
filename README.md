@@ -1,13 +1,13 @@
 ### X Chat Public Platform Bot Builder
 ### 多平台公眾號
 
-#Introduction
+# Introduction
 
 Create platform just like WeChat Public Platform or Chatbots for Facebook Messenger , Line , Telegram and deploy to your own server in a minutes
 
 彈指間，在多個平台上：Facebook Messenger，line，Telegram 建立你的公眾號與聊天機器人。
 
-#feature
+# feature
 - 一個格式 多個平台  
   - 編寫好middleformat便可自動解析到各個平台
 - one format for all Platform
@@ -47,7 +47,7 @@ Create platform just like WeChat Public Platform or Chatbots for Facebook Messen
 - Menu support
   - as many as possible to create a menu in IM platform
 
-##Supported Platforms
+## Supported Platforms
 - [x] Facebook Messenger
 - [x] Telegram
 - [x] Line
@@ -55,12 +55,12 @@ Create platform just like WeChat Public Platform or Chatbots for Facebook Messen
 - [ ] Slack
 - [ ] Whatsapp
 
-#Installation
+# Installation
 ``
 npm install xchat_public_platform --save
 ``
 
-#Sample code
+# Sample code
 ```javascript
 var xcpp = require('xchat_public_platform');
 
@@ -190,9 +190,9 @@ bot.on("ins", function (event_message) {
 app.listen(3000);
 ```
 
-#Function List
+# Function List
 
-###Process Webhook  
+### Process Webhook  
 ``generate_plafrom_webhook_address(generateNewWebhook, callback)``  
 
  - generateNewWebhook - Boolean: True to generate new webhook address,false to get last address
@@ -204,7 +204,7 @@ app.listen(3000);
       }
     ```
 
-###User Management  
+### User Management  
 ``save_user_info_to_db(platform, info)``  
  - platform - String : IM Platform you want to save
  - info - json : user profile content in MiddleUserInfo format
@@ -241,17 +241,17 @@ app.listen(3000);
         $or - filter for documents which meet any of the nested subexpressions  
  - callback - array : list of MiddleUserInfo    
 
-###Greeting  
+### Greeting  
 ```set_greetingMsg(middleGreeting)```   
 will set greeting message when init
 - middleGreeting - Json : use middleGreeting format to set greeting message
 
-###Menu  
+### Menu  
 ``set_menu(middleMenu)``
 will set menu button when init
 - middleMenu - Json : use middleMenu to set Menu in all platform
 
-###Event Emit  
+### Event Emit  
 set_MessageEvents(MiddleEvents_list)  
 you can set branch of events which trigger by some text and subscribe in ``.on()`` function  
 - MiddleEvents_list - array : Array of MiddleEvent 
@@ -261,11 +261,11 @@ set events which trigger by some text and subscribe in ``.on()`` function
 - middleEvent - Json : user MiddleEvent to set all the detail
 
 
-#MiddleFormat
+# MiddleFormat
 MiddleFormat是各個平台設置和訊息的載體  
 編寫好MiddleFormt,項目內置的解析器會將其轉換為需要的格式。  
 
-##MiddleGreeting - 設置歡迎訊息  
+## MiddleGreeting - 設置歡迎訊息  
 
 Sample Code
 ```json
@@ -292,7 +292,7 @@ Messaging Platform Name list
 | line | Line | 
 | all | All of the platform besides you specific set | 
 
-##MiddleMenu - 設置菜單  
+## MiddleMenu - 設置菜單  
 
 Sample Code
 ```json
@@ -335,7 +335,7 @@ Menu Object
 | Menu Button Name | Object | MiddleMsg/MiddleListen Object | Y |
 
 
-##MiddleListen 
+## MiddleListen 
 you can get a callback when user trigger this   
 set it through  
 Menu/SubMenu or  
@@ -370,11 +370,11 @@ event_message Object
 | chatId | string | user Id,use it to reply |
 | triggerText | string | text which trigger this callback |
 
-##MiddleMsg - 發送給用戶的訊息  
+## MiddleMsg - 發送給用戶的訊息  
 
-###Sample Code
+### Sample Code
 
-####Text Message
+#### Text Message
 ```json
 {
     "type": "Text",
@@ -382,7 +382,7 @@ event_message Object
 }
 ```
 
-####WebUrl Message
+#### WebUrl Message
 ```json
 {
     "type" : "WebUrl",
@@ -391,7 +391,7 @@ event_message Object
 }
 ```
 
-####Image Message
+#### Image Message
 ```json
 {
     "type": "Image",
@@ -401,7 +401,7 @@ event_message Object
 ```
 
 
-####List Message
+#### List Message
 ```json
 {
     "type": "SendContentList",
@@ -432,7 +432,7 @@ event_message Object
 }
 ```
 
-####SubMenu Message
+#### SubMenu Message
 ```json
 {
   "type": "SubMenu",
@@ -477,7 +477,7 @@ MiddleMsg Field
 | sub_menu | submenu object | menu item | type == SubMenu |
 
 
-#todo
+# todo
 - [ ] Push Notification api
 - [ ] 生成分享鏈接/二維碼(Generate share link/QR code)  
 - [ ] 支持投票(Vote support)  
@@ -485,6 +485,7 @@ MiddleMsg Field
 - [ ] 構建GUI 編輯工具(GUI editor probably webpage in angular)  
 - [ ] test case  
 - [ ] user analytic 
+
 
 ## Application
 微信的公眾普通提供一種新方式讓用戶傳遞資訊和服務交互。
