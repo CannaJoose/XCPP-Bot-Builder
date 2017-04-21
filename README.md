@@ -62,7 +62,7 @@ npm install xchat_public_platform --save
 
 #Sample code
 ```javascript
-var xcpp = require('../');
+var xcpp = require('xchat_public_platform');
 
 var express = require('express');
 var app = express();
